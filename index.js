@@ -27,7 +27,7 @@ module.exports = function(filename) {
           });
         });
       });
-      this.queue('module.exports = ' + JSON.stringify(modExports));
+      this.queue('module.exports = ' + JSON.stringify(modExports) + ';');
       this.queue(null);
     });
 }
