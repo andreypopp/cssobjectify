@@ -40,4 +40,19 @@ describe('cssobjectify', function() {
       done();
     });
   });
+
+  it('transforms stylesheets into JSON objects (as a dependency)', function(done) {
+    bundle('app.js', function(err, bundle) {
+      if (err) return done(err);
+      var styles = bundle.require('app.js');
+      assert.deepEqual(styles.Component, {
+        fontSize: '12px'
+      });
+      assert.deepEqual(styles.AnotherComponent, {
+        backgroundColor: 'red',
+        display: 'none'
+      });
+      done();
+    });
+  });
 });
