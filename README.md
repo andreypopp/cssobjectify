@@ -38,3 +38,7 @@ And use it with browserify:
 
 where `./myapp.js` or its dependencies can reference `*.css` files by
 `require(...)` calls.
+
+[browserify]: http://browserify.org
+[dcompose]: https://github.com/andreypopp/dcompose
+[React]: http://facebook.github.io/react/
