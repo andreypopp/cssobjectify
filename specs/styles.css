@@ -1,0 +1,8 @@
+Component {
+  font-size: 12px;
+}
+
+AnotherComponent {
+  background-color: red;
+  display: none;
+}
