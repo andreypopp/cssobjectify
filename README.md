@@ -4,6 +4,15 @@ Source transform for [browserify][browserify] or [dcompose][dcompose] which
 converts CSS into JSON objects which can be used further by libraries like
 [React][React] to assign styles to UI components.
 
+`styles.css`:
+
+    MyComponent {
+      font-size: 12px;
+      background-color: red;
+    }
+
+`myapp.js`:
+
     var React = require('react-tools/build/modules/React');
     var Styles = require('./styles.css');
 
