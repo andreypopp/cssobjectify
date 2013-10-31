@@ -31,7 +31,8 @@ describe('cssobjectify', function() {
       if (err) return done(err);
       var styles = bundle.require('styles.css');
       assert.deepEqual(styles.Component, {
-        fontSize: '12px'
+        fontSize: '12px',
+        WebkitTransform: 'yeah'
       });
       assert.deepEqual(styles.AnotherComponent, {
         backgroundColor: 'red',
@@ -46,7 +47,8 @@ describe('cssobjectify', function() {
       if (err) return done(err);
       var styles = bundle.require('app.js');
       assert.deepEqual(styles.Component, {
-        fontSize: '12px'
+        fontSize: '12px',
+        WebkitTransform: 'yeah'
       });
       assert.deepEqual(styles.AnotherComponent, {
         backgroundColor: 'red',
