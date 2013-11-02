@@ -4,7 +4,7 @@ var parse = require('css-parse'),
     toCamelCase = require('to-camel-case'),
     through = require('through');
 
-var isCSS = /\.(css|styl|sass|scss|less)$/;
+var isCSS = /\.(csso|css|styl|sass|scss|less)$/;
 
 module.exports = function(filename) {
   if (!isCSS.exec(filename)) return through();
