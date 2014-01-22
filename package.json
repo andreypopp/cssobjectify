@@ -1,6 +1,6 @@
 {
   "name": "cssobjectify",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Browserify/dcompose transform to convert CSS into an JSON object",
   "main": "index.js",
   "dependencies": {
