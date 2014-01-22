@@ -23,6 +23,7 @@
   },
   "keywords": [
     "browserify",
+    "browserify-transform",
     "dcompose",
     "dgraph",
     "css",
