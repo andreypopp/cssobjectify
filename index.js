@@ -20,9 +20,11 @@ module.exports = function(filename) {
         return this.emit('error', 'error parsing ' + filename + ': ' + err);
       }
       tree.stylesheet.rules.forEach(function(rule) {
+        if (rule.type !== 'rule') return;
         rule.selectors.forEach(function(selector) {
           var styles = (modExports[selector] = modExports[selector] || {});
           rule.declarations.forEach(function(declaration) {
+            if (declaration.type !== 'declaration') return;
             styles[toCamelCase(declaration.property)] = declaration.value;
           });
         });
